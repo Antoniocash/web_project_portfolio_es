@@ -1,5 +1,4 @@
-/*Fot import*/
-
+/*Font import*/
 @font-face {
   font-family: "ArchivoBlack";
   src:
@@ -81,11 +80,38 @@ html {
   padding: 0px 20px 30px 0px;
 }
 
+.header__list-item {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.38rem;
+}
+
 .section__title {
   font-style: normal;
   font-weight: 400;
-  font-size: 40px;
-  line-height: 44px;
+  font-size: 2.22rem;
+  line-height: 2.44rem;
+}
+
+.project__card-texts {
+  padding: 1.66rem;
+  background-color: #1c1c1c;
+}
+
+.project__card-title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.33rem;
+  line-height: 1.83;
+  padding-bottom: 1.11rem;
+}
+
+.project__card-description {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.38rem;
 }
 
 /*General styling */
@@ -122,11 +148,11 @@ body {
 .header__texts {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
+  max-width: 67.75%;
 }
 
 .header__image-ctn {
-  width: 30%;
+  width: 32.25%;
 }
 
 .header__image {
@@ -143,9 +169,9 @@ body {
 .header__list-item {
   display: flex;
   flex-direction: column;
-  padding-right: 30px;
+  padding-right: 1.66rem;
   list-style-type: none;
-  gap: 5px;
+  gap: 0.27rem;
 }
 
 .header__link {
@@ -162,17 +188,16 @@ body {
 }
 
 .link__decoration {
-  height: 5px;
-  width: 100%;
+  height: 0.27rem;
   background: linear-gradient(to right, #4c1a97 0%, #6d6dff 100%);
 }
 
 .header__decoration {
   position: absolute;
-  width: 300px;
-  height: 300px;
-  left: 64.79%;
-  top: 16.66%;
+  width: 16.66rem;
+  height: 16.66rem;
+  left: 65%;
+  top: 17%;
   z-index: -2;
   background: #6d6dff;
   filter: blur(200px);
@@ -191,7 +216,12 @@ body {
 
 .skill__logos {
   display: flex;
+  width: 100%;
   justify-content: space-between;
+}
+
+.project__skill-logo {
+  width: 2.77rem;
 }
 
 .main {
@@ -214,8 +244,12 @@ body {
   display: flex;
   flex-direction: column;
   width: calc((100% - 1.55rem) / 2);
-  min-width: 590px;
+  min-width: 32.77rem;
   margin-bottom: 5.55rem;
+}
+
+.project__card:last-child {
+  margin-bottom: 0;
 }
 
 .project__card-images {
@@ -235,30 +269,19 @@ body {
   width: 100%;
 }
 
-.project__card-texts {
-  padding: 30px;
-  background-color: #1c1c1c;
-  height: 340px;
-}
-
-.project__card-title {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 24px;
-  line-height: 33px;
-  padding-bottom: 20px;
-}
-
-.project__card-description {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  padding-bottom: 30px;
-}
-
 .project__card-icon {
-  padding-right: 20px;
+  padding-right: 1.11rem;
+}
+
+.project__card-texts {
+  height: 18.89rem;
+}
+
+.project__card-content {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .project__card-links {
@@ -287,8 +310,8 @@ body {
 
 .footer__decoration {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 16.66rem;
+  height: 16.66rem;
   left: calc(50% - 300px / 2);
   z-index: -2;
   background: #6d6dff;
@@ -296,7 +319,7 @@ body {
 }
 
 .footer__icons {
-  width: 300px;
+  width: 16.66rem;
   display: flex;
   justify-content: space-between;
 }
@@ -309,6 +332,10 @@ body {
     margin: 40px 40px 25px 40px;
   }
 
+  .hide__char {
+    display: none;
+  }
+
   .hero {
     padding-bottom: 70px;
   }
@@ -317,8 +344,18 @@ body {
     line-height: 3.5rem;
   }
 
-  .header__image {
-    min-width: 15.55rem;
+  .header__texts {
+    display: flex;
+    flex-direction: column;
+    max-width: 69%;
+  }
+
+  .header__image-ctn {
+    width: 31%;
+  }
+
+  .header__decoration {
+    top: 10%;
   }
 
   .header__title {
@@ -334,6 +371,14 @@ body {
   .project__card {
     width: 100%;
     margin-bottom: 1.11rem;
+  }
+
+  .project__card-texts {
+    height: auto;
+  }
+
+  .project__card-description {
+    padding-bottom: 1.66rem;
   }
 
   .footer {
@@ -367,6 +412,11 @@ body {
     max-width: 100%;
   }
 
+  .project__skill-logo {
+    min-width: 1.66rem;
+    flex-wrap: wrap;
+  }
+
   .project__card {
     min-width: 15.5rem;
   }
@@ -377,11 +427,13 @@ body {
 
   .header__image {
     aspect-ratio: 1 / 1;
+    min-width: 12.55rem;
     margin-bottom: 1.66rem;
   }
 
   .header__decoration {
     left: 0;
+    top: 0;
   }
 
   .header__links {
@@ -389,8 +441,58 @@ body {
     gap: 1.38rem;
   }
 
+  .section__title {
+    font-size: 1.55rem;
+    line-height: 1.66rem;
+    padding-bottom: 1.66rem;
+  }
+
+  .section__skills {
+    padding-bottom: 3.33rem;
+  }
+
   .skill__logos {
-    gap: 2.94rem;
+    column-gap: 2.94rem;
+    row-gap: 1.66rem;
     flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .project__card-icons {
+    top: 75%;
+  }
+
+  .project__skill-logo {
+    width: 1.66rem;
+  }
+
+  .project__card-texts {
+    padding: 1.11rem;
+  }
+
+  .project__card-title {
+    font-size: 1.11rem;
+    line-height: 1.5rem;
+  }
+
+  .project__card-description {
+    font-size: 0.88rem;
+    line-height: 1.22rem;
+  }
+
+  .card__img-logo {
+    width: 1.11rem;
+  }
+
+  .footer {
+    margin-top: 3.33rem;
+  }
+  .footer__icons {
+    justify-content: center;
+    gap: 2.22rem;
+  }
+
+  .footer__decoration {
+    top: -50%;
   }
 }
