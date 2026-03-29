@@ -92,6 +92,7 @@ html {
   font-weight: 400;
   font-size: 2.22rem;
   line-height: 2.44rem;
+  padding-left: 0.16rem;
 }
 
 .project__card-texts {
@@ -169,6 +170,7 @@ body {
 .header__list-item {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
   padding-right: 1.66rem;
   list-style-type: none;
   gap: 0.27rem;
@@ -188,6 +190,7 @@ body {
 }
 
 .link__decoration {
+  width: 100%;
   height: 0.27rem;
   background: linear-gradient(to right, #4c1a97 0%, #6d6dff 100%);
 }
@@ -313,6 +316,7 @@ body {
   width: 16.66rem;
   height: 16.66rem;
   left: calc(50% - 300px / 2);
+  top: -50%;
   z-index: -2;
   background: #6d6dff;
   filter: blur(200px);
@@ -327,6 +331,7 @@ body {
 /*Media queries for responsive web design*/
 
 /*Tablet*/
+
 @media screen and (max-width: 768px) {
   .body {
     margin: 40px 40px 25px 40px;
@@ -490,9 +495,5 @@ body {
   .footer__icons {
     justify-content: center;
     gap: 2.22rem;
-  }
-
-  .footer__decoration {
-    top: -50%;
   }
 }
