@@ -1,3 +1,5 @@
+/*Fot import*/
+
 @font-face {
   font-family: "ArchivoBlack";
   src:
@@ -26,16 +28,7 @@
     url("../fonts/OpenSans-Bold.woff") format("woff");
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  max-width: 100%;
-}
-
+/*Font assignation*/
 .header__title,
 .section__title {
   font-family: "ArchivoBlack", Arial, sans-serif;
@@ -53,6 +46,59 @@ body {
   font-family: "OpenSans-Bold", Arial, sans-serif;
 }
 
+.header__list-item {
+  font-family: "OpenSans-SemiBold", Arial, sans-serif;
+}
+
+/*Font styling*/
+html {
+  font-size: 18px;
+}
+
+.header__title {
+  margin: 0;
+  padding: 40px 20px 15px 0px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4.33rem;
+}
+
+.header__subtitle {
+  filter: brightness(0.5);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.39rem;
+  padding: 0px 23px 30px 0px;
+}
+
+.header__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 1.39rem;
+  padding: 0px 20px 30px 0px;
+}
+
+.section__title {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 44px;
+}
+
+/*General styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 100vw;
+}
+
 .body {
   margin: 40px 120px 23px 120px;
   color: #ffff;
@@ -63,48 +109,31 @@ body {
 .header {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .hero {
   display: flex;
   justify-content: space-between;
   padding-bottom: 90px;
+  position: relative;
 }
 
 .header__texts {
   display: flex;
   flex-direction: column;
+  max-width: 70%;
 }
 
-.header__title {
-  margin: 0;
-  padding: 40px 20px 15px 0px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 72px;
-  line-height: 78px;
-}
-
-.header__subtitle {
-  filter: brightness(0.5);
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  padding: 0px 23px 30px 0px;
-}
-
-.header__text {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 25px;
-  padding: 0px 20px 30px 0px;
+.header__image-ctn {
+  width: 30%;
 }
 
 .header__image {
-  width: 387px;
-  height: 500px;
+  width: 100%;
+  min-width: 12rem;
+  aspect-ratio: 1 / 1.2;
+  object-fit: cover;
 }
 
 .header__links {
@@ -115,7 +144,6 @@ body {
   display: flex;
   flex-direction: column;
   padding-right: 30px;
-  font-family: "OpenSans-SemiBold", Arial, sans-serif;
   list-style-type: none;
   gap: 5px;
 }
@@ -143,18 +171,11 @@ body {
   position: absolute;
   width: 300px;
   height: 300px;
-  left: 933px;
-  top: 240px;
+  left: 64.79%;
+  top: 16.66%;
   z-index: -2;
   background: #6d6dff;
   filter: blur(200px);
-}
-
-.section__title {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 44px;
 }
 
 .skills__title,
@@ -177,31 +198,41 @@ body {
   width: 100%;
 }
 
+.section__projects {
+  display: flex;
+  flex-direction: column;
+}
+
 .projects {
   display: flex;
-  gap: 20px;
+  gap: 1.11rem;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .project__card {
   display: flex;
   flex-direction: column;
-  width: 590px;
-  margin-bottom: 100px;
-}
-
-.project__card-preview {
-  width: 590px;
-  height: 330px;
+  width: calc((100% - 1.55rem) / 2);
+  min-width: 590px;
+  margin-bottom: 5.55rem;
 }
 
 .project__card-images {
   position: relative;
+  width: 100%;
+}
+
+.project__card-preview {
+  width: 100%;
+  object-fit: cover;
 }
 
 .project__card-icons {
   position: absolute;
-  top: 280px;
-  left: 12px;
+  top: 85%;
+  left: 2.25%;
+  width: 100%;
 }
 
 .project__card-texts {
@@ -238,6 +269,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
 }
 
 .footer__title {
@@ -258,7 +290,6 @@ body {
   width: 300px;
   height: 300px;
   left: calc(50% - 300px / 2);
-  top: 1675px;
   z-index: -2;
   background: #6d6dff;
   filter: blur(200px);
@@ -268,4 +299,98 @@ body {
   width: 300px;
   display: flex;
   justify-content: space-between;
+}
+
+/*Media queries for responsive web design*/
+
+/*Tablet*/
+@media screen and (max-width: 768px) {
+  .body {
+    margin: 40px 40px 25px 40px;
+  }
+
+  .hero {
+    padding-bottom: 70px;
+  }
+  .header__title {
+    font-size: 3.22rem;
+    line-height: 3.5rem;
+  }
+
+  .header__image {
+    min-width: 15.55rem;
+  }
+
+  .header__title {
+    padding-top: 0;
+  }
+
+  .projects {
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .project__card {
+    width: 100%;
+    margin-bottom: 1.11rem;
+  }
+
+  .footer {
+    margin-top: 4.44rem;
+  }
+}
+
+/*Mobile*/
+@media screen and (max-width: 320px) {
+  .body {
+    margin: 1.11rem;
+  }
+
+  .header__title {
+    font-size: 2rem;
+    line-height: 2.16rem;
+  }
+
+  .header__subtitle,
+  .header__text {
+    font-size: 0.88rem;
+    line-height: 1.22rem;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .header__texts {
+    max-width: 100%;
+  }
+
+  .project__card {
+    min-width: 15.5rem;
+  }
+
+  .header__image-ctn {
+    width: 100%;
+  }
+
+  .header__image {
+    aspect-ratio: 1 / 1;
+    margin-bottom: 1.66rem;
+  }
+
+  .header__decoration {
+    left: 0;
+  }
+
+  .header__links {
+    flex-direction: column;
+    gap: 1.38rem;
+  }
+
+  .skill__logos {
+    gap: 2.94rem;
+    flex-wrap: wrap;
+  }
 }
