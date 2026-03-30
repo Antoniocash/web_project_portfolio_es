@@ -1,0 +1,44 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.footer__title {
+  padding-bottom: 20px;
+}
+
+.footer__email {
+  padding-bottom: 30px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #6d6dff;
+}
+
+.footer__email:hover {
+  opacity: 0.5;
+}
+
+.footer__decoration {
+  position: absolute;
+  width: 16.66rem;
+  height: 16.66rem;
+  left: calc(50% - 300px / 2);
+  top: -50%;
+  z-index: -2;
+  background: #6d6dff;
+  filter: blur(200px);
+}
+
+.footer__icons {
+  width: 16.66rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__icon:hover {
+  opacity: 0.5;
+}
