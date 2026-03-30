@@ -260,9 +260,24 @@ body {
   width: 100%;
 }
 
+.project__card-visual {
+  background: linear-gradient(
+    to bottom,
+    transparent 0%,
+    transparent 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+  height: 100%;
+  z-index: 1;
+  position: absolute;
+}
+
 .project__card-preview {
   width: 100%;
+  aspect-ratio: 16 / 9;
   object-fit: cover;
+  position: relative;
+  z-index: 0;
 }
 
 .project__card-icons {
@@ -270,6 +285,7 @@ body {
   top: 85%;
   left: 2.25%;
   width: 100%;
+  z-index: 1;
 }
 
 .project__card-icon {
@@ -443,6 +459,7 @@ body {
 
   .header__links {
     flex-direction: column;
+    align-items: flex-start;
     gap: 1.38rem;
   }
 
