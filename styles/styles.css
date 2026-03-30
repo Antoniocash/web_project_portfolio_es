@@ -347,7 +347,7 @@ body {
 
 /*Media queries for responsive web design*/
 
-/*Breakpoints*/
+/*Desktop-Tablet Breakpoints*/
 
 @media screen and (max-width: 1439px) {
   .footer {
@@ -359,92 +359,15 @@ body {
   }
 }
 
-@media screen and (max-width: 688px) {
-  .header__title {
-    font-size: 2rem;
-    line-height: 2.16rem;
-  }
-
-  .header__subtitle,
-  .header__text {
-    font-size: 0.88rem;
-    line-height: 1.22rem;
-  }
-
-  .header__texts {
-    width: 100%;
-  }
-
-  .hero {
-    flex-direction: column-reverse;
-  }
-
-  .header__texts {
-    min-width: 100%;
-  }
-
-  .header__decoration {
-    left: 10%;
-  }
-
-  .header__image-ctn {
-    width: 100%;
-  }
-
-  .header__image {
-    aspect-ratio: 1 / 1;
-    min-width: 12.55rem;
-    margin-bottom: 1.66rem;
-  }
-
-  .header__links {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.38rem;
-  }
-
-  .project__card {
-    min-width: 15.55rem;
-  }
-
-  .project__skill-logo {
-    width: 1.66rem;
-  }
-
-  .project__card-texts {
-    padding: 1.11rem;
-  }
-
-  .project__card-title {
-    font-size: 1.11rem;
-    line-height: 1.5rem;
-  }
-
-  .project__card-description {
-    font-size: 0.88rem;
-    line-height: 1.22rem;
-  }
-
-  .card__img-logo {
-    width: 1.55rem;
+@media screen and (max-width: 1220px) {
+  .body {
+    margin: 40px 40px 25px 40px;
   }
 }
-
-@media screen and (max-width: 545px) {
-  .project__card-icons {
-    top: 80%;
-  }
-}
-
-/*Design for specified resolutions/*
 
 /*Tablet 768px*/
 
 @media screen and (max-width: 768px) {
-  .body {
-    margin: 40px 40px 25px 40px;
-  }
-
   .hide__char {
     display: none;
   }
@@ -499,10 +422,113 @@ body {
   }
 }
 
-/*Mobile 320px*/
-@media screen and (max-width: 320px) {
+/*Tablet-Mobile Breakpoints*/
+@media screen and (max-width: 688px) {
+  .header__title {
+    font-size: 2rem;
+    line-height: 2.16rem;
+  }
+
+  .header__subtitle,
+  .header__text {
+    font-size: 0.88rem;
+    line-height: 1.22rem;
+  }
+
+  .header__texts {
+    width: 100%;
+  }
+
+  .hero {
+    flex-direction: column-reverse;
+  }
+
+  .header__texts {
+    min-width: 100%;
+  }
+
+  .header__decoration {
+    left: 10%;
+  }
+
+  .header__image-ctn {
+    width: 100%;
+  }
+
+  .header__image {
+    aspect-ratio: 1 / 1;
+    min-width: 12.55rem;
+    max-width: 40%;
+    margin-bottom: 1.66rem;
+  }
+
+  .header__links {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.38rem;
+  }
+
+  .project__card {
+    min-width: 15.55rem;
+  }
+
+  .project__skill-logo {
+    width: 1.66rem;
+  }
+
+  .project__card-texts {
+    padding: 1.11rem;
+  }
+
+  .project__card-title {
+    font-size: 1.11rem;
+    line-height: 1.5rem;
+  }
+
+  .project__card-description {
+    font-size: 0.88rem;
+    line-height: 1.22rem;
+  }
+
+  .card__img-logo {
+    width: 1.55rem;
+  }
+}
+
+@media screen and (max-width: 545px) {
+  .project__card-icons {
+    top: 80%;
+  }
+
+  .section__title {
+    font-size: 1.55rem;
+    line-height: 1.66rem;
+    padding-bottom: 1.66rem;
+  }
+
+  .section__skills {
+    padding-bottom: 3.33rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .header__image {
+    max-width: 80%;
+  }
+
+  .project__card-icons {
+    top: 75%;
+  }
+
   .body {
     margin: 1.11rem;
+  }
+}
+
+/*Mobile 320px*/
+@media screen and (max-width: 320px) {
+  .header__image {
+    max-width: 100%;
   }
 
   .header__decoration {
@@ -517,16 +543,6 @@ body {
 
   .project__card-icons {
     top: 70%;
-  }
-
-  .section__title {
-    font-size: 1.55rem;
-    line-height: 1.66rem;
-    padding-bottom: 1.66rem;
-  }
-
-  .section__skills {
-    padding-bottom: 3.33rem;
   }
 
   .skill__logos {
